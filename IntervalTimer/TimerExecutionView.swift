@@ -1,4 +1,5 @@
 import SwiftUI
+import AVFoundation
 
 struct TimerExecutionView: View {
     var sequence: TimerSequence
@@ -8,13 +9,18 @@ struct TimerExecutionView: View {
     
     var body: some View {
         VStack {
-            Text(sequence.steps[currentStepIndex].name)
-                .font(.largeTitle)
-            Text("\(remainingTime, specifier: "%.1f") seconds remaining")
-                .font(.title)
-            Button(action: startOrPause) {
-                Text(timer == nil ? "Start" : "Pause")
+            if currentStepIndex < sequence.steps.count {
+                Text(sequence.steps[currentStepIndex].name)
+                    .font(.largeTitle)
+                Text("\(remainingTime, specifier: "%.1f") seconds remaining")
                     .font(.title)
+                Button(action: startOrPause) {
+                    Text(timer == nil ? "Start" : "Pause")
+                        .font(.title)
+                }
+            } else {
+                Text("Sequence Complete")
+                    .font(.largeTitle)
             }
         }
         .onAppear(perform: startNextStep)
