@@ -7,7 +7,7 @@ struct TimerExecutionView: View {
     @State private var remainingTime: TimeInterval = 0
     @State private var timer: Timer?
     @State private var audioPlayer: AVAudioPlayer?
-
+    
     var body: some View {
         VStack {
             if currentStepIndex < sequence.steps.count {
@@ -24,10 +24,13 @@ struct TimerExecutionView: View {
                     .font(.largeTitle)
             }
         }
-        .onAppear(perform: startNextStep)
+        .onAppear {
+            preloadSound()
+            startNextStep()
+        }
         .onDisappear(perform: stopTimer)
     }
-
+    
     func startNextStep() {
         guard currentStepIndex < sequence.steps.count else {
             stopTimer()
@@ -36,7 +39,7 @@ struct TimerExecutionView: View {
         }
         remainingTime = sequence.steps[currentStepIndex].duration
     }
-
+    
     func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
             self.remainingTime -= 0.1
@@ -47,12 +50,12 @@ struct TimerExecutionView: View {
             }
         }
     }
-
+    
     func stopTimer() {
         timer?.invalidate()
         timer = nil
     }
-
+    
     func startOrPause() {
         if timer == nil {
             startTimer()
@@ -60,18 +63,22 @@ struct TimerExecutionView: View {
             stopTimer()
         }
     }
-
-    func playSound() {
+    
+    func preloadSound() {
         guard let soundURL = Bundle.main.url(forResource: "ding-126626", withExtension: "mp3") else {
             print("Sound file not found")
             return
         }
-
+        
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
-            audioPlayer?.play()
+            audioPlayer?.prepareToPlay()
         } catch {
             print("Failed to play sound: \(error.localizedDescription)")
         }
+    }
+    
+    func playSound() {
+        audioPlayer?.play()
     }
 }
