@@ -9,22 +9,31 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(sequences) { sequence in
-                    HStack {
-                        Text(sequence.name)
-                        Spacer()
-                        Button(action: {
-                            self.selectedSequenceForRunning = sequence
-                        }) {
-                            Text("Run")
+                    Button(action: {
+                        self.selectedSequenceForRunning = sequence
+                    }) {
+                        HStack {
+                            Text(sequence.name)
+                            Spacer()
                         }
-                        .buttonStyle(BorderlessButtonStyle())
-                        
+                    }
+                    .contentShape(Rectangle()) // Ensures the entire row is tappable
+                    .swipeActions(edge: .trailing) {
                         Button(action: {
                             self.selectedSequenceForEditing = sequence
                         }) {
-                            Image(systemName: "pencil")
+                            Label("Edit", systemImage: "pencil")
                         }
-                        .buttonStyle(BorderlessButtonStyle())
+                        .tint(.blue)
+                        
+                        Button(role: .destructive) {
+                            if let index = sequences.firstIndex(where: { $0.id == sequence.id }) {
+                                sequences.remove(at: index)
+                                saveSequences(sequences)
+                            }
+                        } label: {
+                            Label("Delete", systemImage: "trash")
+                        }
                     }
                 }
                 .onDelete { indexSet in
