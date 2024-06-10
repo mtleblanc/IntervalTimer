@@ -17,6 +17,7 @@
 		1ED4BB4A2C1681AF00D40BA6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB492C1681AF00D40BA6 /* Model.swift */; };
 		1ED4BB4C2C16878B00D40BA6 /* SequenceEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB4B2C16878B00D40BA6 /* SequenceEditorView.swift */; };
 		1ED4BB4E2C1687D200D40BA6 /* TimerExecutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB4D2C1687D200D40BA6 /* TimerExecutionView.swift */; };
+		1ED4BB502C1698B800D40BA6 /* ding-126626.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1ED4BB4F2C1698B800D40BA6 /* ding-126626.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1ED4BB492C1681AF00D40BA6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		1ED4BB4B2C16878B00D40BA6 /* SequenceEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceEditorView.swift; sourceTree = "<group>"; };
 		1ED4BB4D2C1687D200D40BA6 /* TimerExecutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerExecutionView.swift; sourceTree = "<group>"; };
+		1ED4BB4F2C1698B800D40BA6 /* ding-126626.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "ding-126626.mp3"; path = "Assets.xcassets/ding-126626.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				1ED4BB4D2C1687D200D40BA6 /* TimerExecutionView.swift */,
 				1ED4BB492C1681AF00D40BA6 /* Model.swift */,
 				1ED4BB222C16815700D40BA6 /* Assets.xcassets */,
+				1ED4BB4F2C1698B800D40BA6 /* ding-126626.mp3 */,
 				1ED4BB252C16815700D40BA6 /* Preview Content */,
 			);
 			path = IntervalTimer;
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ED4BB272C16815700D40BA6 /* Preview Assets.xcassets in Resources */,
+				1ED4BB502C1698B800D40BA6 /* ding-126626.mp3 in Resources */,
 				1ED4BB232C16815700D40BA6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
