@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1ED4BB1F2C16815500D40BA6 /* IntervalTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB1E2C16815500D40BA6 /* IntervalTimerApp.swift */; };
+		1ED4BB212C16815500D40BA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB202C16815500D40BA6 /* ContentView.swift */; };
+		1ED4BB232C16815700D40BA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED4BB222C16815700D40BA6 /* Assets.xcassets */; };
+		1ED4BB272C16815700D40BA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED4BB262C16815700D40BA6 /* Preview Assets.xcassets */; };
+		1ED4BB312C16815700D40BA6 /* IntervalTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB302C16815700D40BA6 /* IntervalTimerTests.swift */; };
+		1ED4BB3B2C16815700D40BA6 /* IntervalTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB3A2C16815700D40BA6 /* IntervalTimerUITests.swift */; };
+		1ED4BB3D2C16815700D40BA6 /* IntervalTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB3C2C16815700D40BA6 /* IntervalTimerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1ED4BB2D2C16815700D40BA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ED4BB132C16815500D40BA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ED4BB1A2C16815500D40BA6;
+			remoteInfo = IntervalTimer;
+		};
+		1ED4BB372C16815700D40BA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ED4BB132C16815500D40BA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ED4BB1A2C16815500D40BA6;
+			remoteInfo = IntervalTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1ED4BB1B2C16815500D40BA6 /* IntervalTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntervalTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ED4BB1E2C16815500D40BA6 /* IntervalTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTimerApp.swift; sourceTree = "<group>"; };
+		1ED4BB202C16815500D40BA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1ED4BB222C16815700D40BA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1ED4BB242C16815700D40BA6 /* IntervalTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IntervalTimer.entitlements; sourceTree = "<group>"; };
+		1ED4BB262C16815700D40BA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1ED4BB2C2C16815700D40BA6 /* IntervalTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntervalTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ED4BB302C16815700D40BA6 /* IntervalTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTimerTests.swift; sourceTree = "<group>"; };
+		1ED4BB362C16815700D40BA6 /* IntervalTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntervalTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ED4BB3A2C16815700D40BA6 /* IntervalTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTimerUITests.swift; sourceTree = "<group>"; };
+		1ED4BB3C2C16815700D40BA6 /* IntervalTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ED4BB182C16815500D40BA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED4BB292C16815700D40BA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED4BB332C16815700D40BA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ED4BB122C16815500D40BA6 = {
+			isa = PBXGroup;
+			children = (
+				1ED4BB1D2C16815500D40BA6 /* IntervalTimer */,
+				1ED4BB2F2C16815700D40BA6 /* IntervalTimerTests */,
+				1ED4BB392C16815700D40BA6 /* IntervalTimerUITests */,
+				1ED4BB1C2C16815500D40BA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1ED4BB1C2C16815500D40BA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4BB1B2C16815500D40BA6 /* IntervalTimer.app */,
+				1ED4BB2C2C16815700D40BA6 /* IntervalTimerTests.xctest */,
+				1ED4BB362C16815700D40BA6 /* IntervalTimerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1ED4BB1D2C16815500D40BA6 /* IntervalTimer */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4BB1E2C16815500D40BA6 /* IntervalTimerApp.swift */,
+				1ED4BB202C16815500D40BA6 /* ContentView.swift */,
+				1ED4BB222C16815700D40BA6 /* Assets.xcassets */,
+				1ED4BB242C16815700D40BA6 /* IntervalTimer.entitlements */,
+				1ED4BB252C16815700D40BA6 /* Preview Content */,
+			);
+			path = IntervalTimer;
+			sourceTree = "<group>";
+		};
+		1ED4BB252C16815700D40BA6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4BB262C16815700D40BA6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1ED4BB2F2C16815700D40BA6 /* IntervalTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4BB302C16815700D40BA6 /* IntervalTimerTests.swift */,
+			);
+			path = IntervalTimerTests;
+			sourceTree = "<group>";
+		};
+		1ED4BB392C16815700D40BA6 /* IntervalTimerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4BB3A2C16815700D40BA6 /* IntervalTimerUITests.swift */,
+				1ED4BB3C2C16815700D40BA6 /* IntervalTimerUITestsLaunchTests.swift */,
+			);
+			path = IntervalTimerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ED4BB1A2C16815500D40BA6 /* IntervalTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ED4BB402C16815700D40BA6 /* Build configuration list for PBXNativeTarget "IntervalTimer" */;
+			buildPhases = (
+				1ED4BB172C16815500D40BA6 /* Sources */,
+				1ED4BB182C16815500D40BA6 /* Frameworks */,
+				1ED4BB192C16815500D40BA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntervalTimer;
+			productName = IntervalTimer;
+			productReference = 1ED4BB1B2C16815500D40BA6 /* IntervalTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1ED4BB2B2C16815700D40BA6 /* IntervalTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ED4BB432C16815700D40BA6 /* Build configuration list for PBXNativeTarget "IntervalTimerTests" */;
+			buildPhases = (
+				1ED4BB282C16815700D40BA6 /* Sources */,
+				1ED4BB292C16815700D40BA6 /* Frameworks */,
+				1ED4BB2A2C16815700D40BA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ED4BB2E2C16815700D40BA6 /* PBXTargetDependency */,
+			);
+			name = IntervalTimerTests;
+			productName = IntervalTimerTests;
+			productReference = 1ED4BB2C2C16815700D40BA6 /* IntervalTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1ED4BB352C16815700D40BA6 /* IntervalTimerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ED4BB462C16815700D40BA6 /* Build configuration list for PBXNativeTarget "IntervalTimerUITests" */;
+			buildPhases = (
+				1ED4BB322C16815700D40BA6 /* Sources */,
+				1ED4BB332C16815700D40BA6 /* Frameworks */,
+				1ED4BB342C16815700D40BA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ED4BB382C16815700D40BA6 /* PBXTargetDependency */,
+			);
+			name = IntervalTimerUITests;
+			productName = IntervalTimerUITests;
+			productReference = 1ED4BB362C16815700D40BA6 /* IntervalTimerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1ED4BB132C16815500D40BA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					1ED4BB1A2C16815500D40BA6 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					1ED4BB2B2C16815700D40BA6 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 1ED4BB1A2C16815500D40BA6;
+					};
+					1ED4BB352C16815700D40BA6 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 1ED4BB1A2C16815500D40BA6;
+					};
+				};
+			};
+			buildConfigurationList = 1ED4BB162C16815500D40BA6 /* Build configuration list for PBXProject "IntervalTimer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1ED4BB122C16815500D40BA6;
+			productRefGroup = 1ED4BB1C2C16815500D40BA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1ED4BB1A2C16815500D40BA6 /* IntervalTimer */,
+				1ED4BB2B2C16815700D40BA6 /* IntervalTimerTests */,
+				1ED4BB352C16815700D40BA6 /* IntervalTimerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ED4BB192C16815500D40BA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED4BB272C16815700D40BA6 /* Preview Assets.xcassets in Resources */,
+				1ED4BB232C16815700D40BA6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED4BB2A2C16815700D40BA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED4BB342C16815700D40BA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ED4BB172C16815500D40BA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED4BB212C16815500D40BA6 /* ContentView.swift in Sources */,
+				1ED4BB1F2C16815500D40BA6 /* IntervalTimerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED4BB282C16815700D40BA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED4BB312C16815700D40BA6 /* IntervalTimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED4BB322C16815700D40BA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED4BB3B2C16815700D40BA6 /* IntervalTimerUITests.swift in Sources */,
+				1ED4BB3D2C16815700D40BA6 /* IntervalTimerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1ED4BB2E2C16815700D40BA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ED4BB1A2C16815500D40BA6 /* IntervalTimer */;
+			targetProxy = 1ED4BB2D2C16815700D40BA6 /* PBXContainerItemProxy */;
+		};
+		1ED4BB382C16815700D40BA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ED4BB1A2C16815500D40BA6 /* IntervalTimer */;
+			targetProxy = 1ED4BB372C16815700D40BA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1ED4BB3E2C16815700D40BA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1ED4BB3F2C16815700D40BA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1ED4BB412C16815700D40BA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IntervalTimer/IntervalTimer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IntervalTimer/Preview Content\"";
+				DEVELOPMENT_TEAM = DGM8K9ARR5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lebmich.IntervalTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1ED4BB422C16815700D40BA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IntervalTimer/IntervalTimer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IntervalTimer/Preview Content\"";
+				DEVELOPMENT_TEAM = DGM8K9ARR5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lebmich.IntervalTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1ED4BB442C16815700D40BA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DGM8K9ARR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lebmich.IntervalTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntervalTimer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IntervalTimer";
+			};
+			name = Debug;
+		};
+		1ED4BB452C16815700D40BA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DGM8K9ARR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lebmich.IntervalTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntervalTimer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IntervalTimer";
+			};
+			name = Release;
+		};
+		1ED4BB472C16815700D40BA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DGM8K9ARR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lebmich.IntervalTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IntervalTimer;
+			};
+			name = Debug;
+		};
+		1ED4BB482C16815700D40BA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DGM8K9ARR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lebmich.IntervalTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IntervalTimer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ED4BB162C16815500D40BA6 /* Build configuration list for PBXProject "IntervalTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ED4BB3E2C16815700D40BA6 /* Debug */,
+				1ED4BB3F2C16815700D40BA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ED4BB402C16815700D40BA6 /* Build configuration list for PBXNativeTarget "IntervalTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ED4BB412C16815700D40BA6 /* Debug */,
+				1ED4BB422C16815700D40BA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ED4BB432C16815700D40BA6 /* Build configuration list for PBXNativeTarget "IntervalTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ED4BB442C16815700D40BA6 /* Debug */,
+				1ED4BB452C16815700D40BA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ED4BB462C16815700D40BA6 /* Build configuration list for PBXNativeTarget "IntervalTimerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ED4BB472C16815700D40BA6 /* Debug */,
+				1ED4BB482C16815700D40BA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1ED4BB132C16815500D40BA6 /* Project object */;
+}
