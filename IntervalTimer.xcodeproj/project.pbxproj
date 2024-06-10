@@ -14,6 +14,9 @@
 		1ED4BB312C16815700D40BA6 /* IntervalTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB302C16815700D40BA6 /* IntervalTimerTests.swift */; };
 		1ED4BB3B2C16815700D40BA6 /* IntervalTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB3A2C16815700D40BA6 /* IntervalTimerUITests.swift */; };
 		1ED4BB3D2C16815700D40BA6 /* IntervalTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB3C2C16815700D40BA6 /* IntervalTimerUITestsLaunchTests.swift */; };
+		1ED4BB4A2C1681AF00D40BA6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB492C1681AF00D40BA6 /* Model.swift */; };
+		1ED4BB4C2C16878B00D40BA6 /* SequenceEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB4B2C16878B00D40BA6 /* SequenceEditorView.swift */; };
+		1ED4BB4E2C1687D200D40BA6 /* TimerExecutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB4D2C1687D200D40BA6 /* TimerExecutionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		1ED4BB362C16815700D40BA6 /* IntervalTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntervalTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED4BB3A2C16815700D40BA6 /* IntervalTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTimerUITests.swift; sourceTree = "<group>"; };
 		1ED4BB3C2C16815700D40BA6 /* IntervalTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1ED4BB492C1681AF00D40BA6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1ED4BB4B2C16878B00D40BA6 /* SequenceEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceEditorView.swift; sourceTree = "<group>"; };
+		1ED4BB4D2C1687D200D40BA6 /* TimerExecutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerExecutionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				1ED4BB222C16815700D40BA6 /* Assets.xcassets */,
 				1ED4BB242C16815700D40BA6 /* IntervalTimer.entitlements */,
 				1ED4BB252C16815700D40BA6 /* Preview Content */,
+				1ED4BB492C1681AF00D40BA6 /* Model.swift */,
+				1ED4BB4B2C16878B00D40BA6 /* SequenceEditorView.swift */,
+				1ED4BB4D2C1687D200D40BA6 /* TimerExecutionView.swift */,
 			);
 			path = IntervalTimer;
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED4BB4A2C1681AF00D40BA6 /* Model.swift in Sources */,
 				1ED4BB212C16815500D40BA6 /* ContentView.swift in Sources */,
+				1ED4BB4C2C16878B00D40BA6 /* SequenceEditorView.swift in Sources */,
 				1ED4BB1F2C16815500D40BA6 /* IntervalTimerApp.swift in Sources */,
+				1ED4BB4E2C1687D200D40BA6 /* TimerExecutionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
