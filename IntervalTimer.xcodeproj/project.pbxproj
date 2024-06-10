@@ -101,14 +101,14 @@
 		1ED4BB1D2C16815500D40BA6 /* IntervalTimer */ = {
 			isa = PBXGroup;
 			children = (
+				1ED4BB242C16815700D40BA6 /* IntervalTimer.entitlements */,
 				1ED4BB1E2C16815500D40BA6 /* IntervalTimerApp.swift */,
 				1ED4BB202C16815500D40BA6 /* ContentView.swift */,
-				1ED4BB222C16815700D40BA6 /* Assets.xcassets */,
-				1ED4BB242C16815700D40BA6 /* IntervalTimer.entitlements */,
-				1ED4BB252C16815700D40BA6 /* Preview Content */,
-				1ED4BB492C1681AF00D40BA6 /* Model.swift */,
 				1ED4BB4B2C16878B00D40BA6 /* SequenceEditorView.swift */,
 				1ED4BB4D2C1687D200D40BA6 /* TimerExecutionView.swift */,
+				1ED4BB492C1681AF00D40BA6 /* Model.swift */,
+				1ED4BB222C16815700D40BA6 /* Assets.xcassets */,
+				1ED4BB252C16815700D40BA6 /* Preview Content */,
 			);
 			path = IntervalTimer;
 			sourceTree = "<group>";

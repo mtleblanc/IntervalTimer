@@ -12,11 +12,12 @@ struct SequenceEditorView: View {
                 }
                 Section(header: Text("Steps")) {
                     ForEach($sequence.steps) { $step in
-                        VStack(alignment: .leading) {
+                        HStack {
                             TextField("Step Name", text: $step.name)
+                            Spacer()
                             HStack {
                                 Text("Duration:")
-                                TextField("Duration", value: $step.duration, formatter: NumberFormatter())
+                                TextField("Duration", value: $step.duration, formatter: NumberFormatter.decimal)
                                     .keyboardType(.numberPad)
                             }
                         }
@@ -37,5 +38,30 @@ struct SequenceEditorView: View {
                 onSave(sequence)
             })
         }
+    }
+}
+
+extension NumberFormatter {
+    static var decimal: NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        return formatter
+    }
+}
+
+struct SequenceEditorView_Previews: PreviewProvider {
+    static var previews: some View {
+        SequenceEditorView(
+            sequence: TimerSequence(
+                name: "Sample Sequence",
+                steps: [
+                    TimerStep(name: "Warm Up", duration: 300),
+                    TimerStep(name: "High Intensity", duration: 60),
+                    TimerStep(name: "Rest", duration: 90),
+                    TimerStep(name: "Cool Down", duration: 300)
+                ]
+            ),
+            onSave: { _ in }
+        )
     }
 }

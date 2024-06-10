@@ -1,17 +1,4 @@
-//
-//  ContentView.swift
-//  IntervalTimer
-//
-//  Created by Michael LeBlanc on 2024-06-09.
-//
-
 import SwiftUI
-
-
-#Preview {
-    ContentView()
-}
-
 
 struct ContentView: View {
     @State private var sequences: [TimerSequence] = loadSequences()
@@ -48,6 +35,7 @@ struct ContentView: View {
                         self.sequences[index] = updatedSequence
                     }
                     saveSequences(self.sequences)
+                    self.selectedSequence = nil // Dismiss the sheet
                 })
             }
         }
