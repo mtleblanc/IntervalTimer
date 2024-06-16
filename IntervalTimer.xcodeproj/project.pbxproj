@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E641DC62C1F1DF60020398F /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E641DC52C1F1DF60020398F /* TimerView.swift */; };
 		1ED4BB1F2C16815500D40BA6 /* IntervalTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB1E2C16815500D40BA6 /* IntervalTimerApp.swift */; };
 		1ED4BB212C16815500D40BA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB202C16815500D40BA6 /* ContentView.swift */; };
 		1ED4BB232C16815700D40BA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED4BB222C16815700D40BA6 /* Assets.xcassets */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E641DC42C1F135C0020398F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1E641DC52C1F1DF60020398F /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		1ED4BB1B2C16815500D40BA6 /* IntervalTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntervalTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED4BB1E2C16815500D40BA6 /* IntervalTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTimerApp.swift; sourceTree = "<group>"; };
 		1ED4BB202C16815500D40BA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +106,7 @@
 		1ED4BB1D2C16815500D40BA6 /* IntervalTimer */ = {
 			isa = PBXGroup;
 			children = (
+				1E641DC42C1F135C0020398F /* Info.plist */,
 				1ED4BB242C16815700D40BA6 /* IntervalTimer.entitlements */,
 				1ED4BB1E2C16815500D40BA6 /* IntervalTimerApp.swift */,
 				1ED4BB202C16815500D40BA6 /* ContentView.swift */,
@@ -112,6 +116,7 @@
 				1ED4BB222C16815700D40BA6 /* Assets.xcassets */,
 				1ED4BB4F2C1698B800D40BA6 /* ding-126626.mp3 */,
 				1ED4BB252C16815700D40BA6 /* Preview Content */,
+				1E641DC52C1F1DF60020398F /* TimerView.swift */,
 			);
 			path = IntervalTimer;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E641DC62C1F1DF60020398F /* TimerView.swift in Sources */,
 				1ED4BB4A2C1681AF00D40BA6 /* Model.swift in Sources */,
 				1ED4BB212C16815500D40BA6 /* ContentView.swift in Sources */,
 				1ED4BB4C2C16878B00D40BA6 /* SequenceEditorView.swift in Sources */,
@@ -440,6 +446,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IntervalTimer/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -450,7 +457,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
@@ -478,6 +485,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IntervalTimer/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -488,7 +496,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;

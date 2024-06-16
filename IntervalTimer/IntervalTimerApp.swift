@@ -6,12 +6,26 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 @main
 struct IntervalTimerApp: App {
+    init() {
+        configureAudioSession()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TimerView()
+        }
+    }
+    
+    private func configureAudioSession() {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, options: .mixWithOthers)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Failed to set audio session category. \(error)")
         }
     }
 }

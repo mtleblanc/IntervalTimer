@@ -2,9 +2,11 @@ import SwiftUI
 import AVFoundation
 
 struct TimerExecutionView: View {
-    var sequence: TimerSequence
+    let sequence: TimerSequence
     @State private var currentStepIndex = 0
     @State private var remainingTime: TimeInterval = 0
+    @State private var stepEndTime: CFTimeInterval!
+    @State private var stepStartTime: CFTimeInterval!
     @State private var timer: Timer?
     @State private var audioPlayer: AVAudioPlayer?
     
@@ -27,8 +29,11 @@ struct TimerExecutionView: View {
         .onAppear {
             preloadSound()
             startNextStep()
+            UIApplication.shared.isIdleTimerDisabled = true
         }
-        .onDisappear(perform: stopTimer)
+        .onDisappear {
+            UIApplication.shared.isIdleTimerDisabled = false
+        }
     }
     
     func startNextStep() {
@@ -38,12 +43,18 @@ struct TimerExecutionView: View {
             return
         }
         remainingTime = sequence.steps[currentStepIndex].duration
+        stepStartTime = CACurrentMediaTime()
+        stepEndTime = CACurrentMediaTime() + remainingTime
     }
     
     func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
-            self.remainingTime -= 0.1
+        stepEndTime = CACurrentMediaTime() + remainingTime
+        print("Expecting to end at \(stepEndTime!)")
+        timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { _ in
+            self.remainingTime = stepEndTime - CACurrentMediaTime()
+//            print("Currently \(CACurrentMediaTime()), \(self.remainingTime) left")
             if self.remainingTime <= 0 {
+                print("Took \(CACurrentMediaTime() - stepStartTime)")
                 self.playSound()
                 self.currentStepIndex += 1
                 self.startNextStep()

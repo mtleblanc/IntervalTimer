@@ -25,6 +25,9 @@ struct SequenceEditorView: View {
                     .onDelete { indexSet in
                         sequence.steps.remove(atOffsets: indexSet)
                     }
+                    .onMove(perform: { indices, newOffset in
+                        sequence.steps.move(fromOffsets: indices, toOffset: newOffset)
+                    })
                     Button(action: {
                         let newStep = TimerStep(name: "New Step", duration: 60)
                         sequence.steps.append(newStep)
@@ -33,6 +36,7 @@ struct SequenceEditorView: View {
                     }
                 }
             }
+            .environment(\.editMode, Binding.constant(EditMode.active))
             .navigationTitle("Edit Sequence")
             .navigationBarItems(trailing: Button("Save") {
                 onSave(sequence)
