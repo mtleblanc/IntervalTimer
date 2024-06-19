@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E641DC62C1F1DF60020398F /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E641DC52C1F1DF60020398F /* TimerView.swift */; };
 		1ED4BB1F2C16815500D40BA6 /* IntervalTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB1E2C16815500D40BA6 /* IntervalTimerApp.swift */; };
 		1ED4BB212C16815500D40BA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4BB202C16815500D40BA6 /* ContentView.swift */; };
 		1ED4BB232C16815700D40BA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED4BB222C16815700D40BA6 /* Assets.xcassets */; };
@@ -40,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		1E641DC42C1F135C0020398F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		1E641DC52C1F1DF60020398F /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		1ED4BB1B2C16815500D40BA6 /* IntervalTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntervalTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED4BB1E2C16815500D40BA6 /* IntervalTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTimerApp.swift; sourceTree = "<group>"; };
 		1ED4BB202C16815500D40BA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 				1ED4BB222C16815700D40BA6 /* Assets.xcassets */,
 				1ED4BB4F2C1698B800D40BA6 /* ding-126626.mp3 */,
 				1ED4BB252C16815700D40BA6 /* Preview Content */,
-				1E641DC52C1F1DF60020398F /* TimerView.swift */,
 			);
 			path = IntervalTimer;
 			sourceTree = "<group>";
@@ -277,7 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E641DC62C1F1DF60020398F /* TimerView.swift in Sources */,
 				1ED4BB4A2C1681AF00D40BA6 /* Model.swift in Sources */,
 				1ED4BB212C16815500D40BA6 /* ContentView.swift in Sources */,
 				1ED4BB4C2C16878B00D40BA6 /* SequenceEditorView.swift in Sources */,
@@ -444,6 +440,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"IntervalTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = DGM8K9ARR5;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IntervalTimer/Info.plist;
@@ -483,6 +480,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"IntervalTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = DGM8K9ARR5;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IntervalTimer/Info.plist;

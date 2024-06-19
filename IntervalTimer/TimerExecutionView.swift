@@ -1,5 +1,6 @@
 import SwiftUI
 import AVFoundation
+import Combine
 
 struct TimerExecutionView: View {
     let sequence: TimerSequence
@@ -7,8 +8,9 @@ struct TimerExecutionView: View {
     @State private var remainingTime: TimeInterval = 0
     @State private var stepEndTime: CFTimeInterval!
     @State private var stepStartTime: CFTimeInterval!
-    @State private var timer: Timer?
+    @State private var timer: AnyCancellable?
     @State private var audioPlayer: AVAudioPlayer?
+    @State private var isRunning: Bool = false
     
     var body: some View {
         VStack {
@@ -30,8 +32,10 @@ struct TimerExecutionView: View {
             preloadSound()
             startNextStep()
             UIApplication.shared.isIdleTimerDisabled = true
+            LocationManager.shared.update = updateTimer
         }
         .onDisappear {
+            LocationManager.shared.update = nil
             UIApplication.shared.isIdleTimerDisabled = false
         }
     }
@@ -46,13 +50,9 @@ struct TimerExecutionView: View {
         stepStartTime = CACurrentMediaTime()
         stepEndTime = CACurrentMediaTime() + remainingTime
     }
-    
-    func startTimer() {
-        stepEndTime = CACurrentMediaTime() + remainingTime
-        print("Expecting to end at \(stepEndTime!)")
-        timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { _ in
+    func updateTimer() {
+        if(self.isRunning) {
             self.remainingTime = stepEndTime - CACurrentMediaTime()
-//            print("Currently \(CACurrentMediaTime()), \(self.remainingTime) left")
             if self.remainingTime <= 0 {
                 print("Took \(CACurrentMediaTime() - stepStartTime)")
                 self.playSound()
@@ -62,9 +62,19 @@ struct TimerExecutionView: View {
         }
     }
     
+    func startTimer() {
+        stepEndTime = CACurrentMediaTime() + remainingTime
+        isRunning = true
+        print("Expecting to end at \(stepEndTime!)")
+        timer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect().sink { _ in
+            updateTimer()
+        }
+    }
+    
     func stopTimer() {
-        timer?.invalidate()
+        timer?.cancel()
         timer = nil
+        isRunning = false
     }
     
     func startOrPause() {

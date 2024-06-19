@@ -16,7 +16,7 @@ struct IntervalTimerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TimerView()
+            ContentView()
         }
     }
     
