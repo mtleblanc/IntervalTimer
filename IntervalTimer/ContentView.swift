@@ -19,9 +19,9 @@ struct ContentView: View {
                     }
                     .contentShape(Rectangle()) // Ensures the entire row is tappable
                     .swipeActions(edge: .trailing) {
-                        Button(action: {
+                        Button {
                             self.selectedSequenceForEditing = sequence
-                        }) {
+                        } label: {
                             Label("Edit", systemImage: "pencil")
                         }
                         .tint(.blue)
@@ -34,6 +34,13 @@ struct ContentView: View {
                         } label: {
                             Label("Delete", systemImage: "trash")
                         }
+                        Button {
+                            sequences.append(sequence.clone())
+                            saveSequences(sequences)
+                        } label: {
+                            Label("Duplicate", systemImage: "doc.on.doc")
+                        }
+                        .tint(.yellow)
                     }
                 }
                 .onDelete { indexSet in
@@ -42,15 +49,13 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Timer Sequences")
-            .navigationBarItems(trailing:
-                Button(action: {
-                    let newSequence = TimerSequence(name: "New Sequence", steps: [])
-                    self.sequences.append(newSequence)
-                    self.selectedSequenceForEditing = newSequence
-                }) {
-                    Image(systemName: "plus")
-                }
-            )
+            .navigationBarItems(trailing: Button(action: {
+                let newSequence = TimerSequence(name: "New Sequence", steps: [])
+                self.sequences.append(newSequence)
+                self.selectedSequenceForEditing = newSequence
+            }) {
+                Image(systemName: "plus")
+            })
             .sheet(item: $selectedSequenceForEditing) { sequence in
                 SequenceEditorView(sequence: sequence, onSave: { updatedSequence in
                     if let index = self.sequences.firstIndex(where: { $0.id == updatedSequence.id }) {

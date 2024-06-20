@@ -6,12 +6,18 @@ struct TimerStep: Identifiable, Codable {
     var id = UUID()
     var name: String
     var duration: TimeInterval // duration in seconds
+    public func clone() -> Self {
+        TimerStep(name: name, duration: duration)
+    }
 }
 
 struct TimerSequence: Identifiable, Codable {
     var id = UUID()
     var name: String
     var steps: [TimerStep]
+    public func clone() -> Self {
+        TimerSequence(name: name, steps: steps.map{ $0.clone() })
+    }
 }
 
 func saveSequences(_ sequences: [TimerSequence]) {
